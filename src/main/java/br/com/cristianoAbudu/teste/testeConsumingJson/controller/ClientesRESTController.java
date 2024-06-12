@@ -58,7 +58,7 @@ public class ClientesRESTController {
     /*
         http://localhost:8080/recomendacao/20623850567/tipo
      */
-    @GetMapping("/recomendacao/{cliente.json}/tipo")
+    @GetMapping("/recomendacao/{cliente}/tipo")
     public ProdutoData getRecomendacao(
         @PathVariable String cliente
     ){
