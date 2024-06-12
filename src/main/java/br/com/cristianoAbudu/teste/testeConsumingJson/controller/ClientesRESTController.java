@@ -17,20 +17,13 @@ import java.util.List;
 public class ClientesRESTController {
 
     @Autowired
-    ClienteClient clienteClient;
-
-    @Autowired
-    ProdutoClient produtoClient;
-
-    @Autowired
     CompraBusiness compraBusiness;
-
-    @GetMapping
 
     /*
         http://localhost:8080
-     */
-    public List<CompraDTO> get(){
+    */
+    @GetMapping
+    public List<CompraDTO> getAllOrderByValorCompra(){
         return compraBusiness.getAllOrderByValorCompra();
     }
 
